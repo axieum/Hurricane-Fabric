@@ -19,7 +19,7 @@ public abstract class EntityMixin {
     private void isLogicalSideForUpdatingMovement(CallbackInfoReturnable<Boolean> cir) {
         if (this.getControllingPassenger() instanceof PlayerEntity player) {
             if (PlatformUtils.isBedrockPlayer(player.getUuid())) {
-                    cir.setReturnValue(true);
+                cir.setReturnValue(true);
             }
         }
     }
